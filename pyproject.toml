@@ -1,0 +1,21 @@
+[project]
+name = "gmail-mcp-server"
+version = "1.0.0"
+description = "MCP server for Gmail via the Gmail REST API"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "fastmcp>=2.10.6",
+    "mcp>=1.12.0",
+]
+
+[dependency-groups]
+dev = [
+    "pytest>=8.0",
+]
+
+[tool.pytest.ini_options]
+pythonpath = ["."]
+
+[tool.uv]
+package = false
